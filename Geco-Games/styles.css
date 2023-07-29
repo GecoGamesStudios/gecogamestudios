@@ -1,0 +1,209 @@
+/* Reset some default styles */
+body {
+  background-color: #D8BFD8; /* Bluish-purple background color */
+  margin: 0;
+  padding: 0;
+}
+/* Set a default font family and font size */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+
+header, footer {
+  background-color: #50C878;
+  color: #FFFFFF; 
+  padding: 5px 0; 
+  text-align: center;
+}
+
+header img {
+  width: 40px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+header h1 {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.intro {
+  background-color: #228B22; 
+  color: #FFFFFF; 
+  text-align: center;
+  padding: 40px 0;
+}
+
+.intro h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.intro .join-btn {
+  background-color: #FFFFFF; /* White background color */
+  color: #1273eb; /* Purple text color */
+  padding: 12px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.intro .join-btn:hover {
+  background-color: #1273eb; /* Purple background color on hover */
+  color: #FFFFFF; /* White text color on hover */
+}
+
+.about-us, .work-process, .join-us {
+  background-color: #FFFFFF; /* White background color for these sections */
+  color: #000000; /* Purple text color for these sections */
+  text-align: center;
+  padding: 40px 0;
+  border-bottom: 1px solid #EAEAEA; /* Light gray border on bottom */
+}
+
+.about-us h2, .work-process h2, .join-us h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.about-us p, .work-process li, .join-us p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.work-process ul {
+  list-style-type: none;
+}
+
+.work-process li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.work-process li:before {
+  content: "\f058"; /* Unicode for FontAwesome check icon */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: #1273eb; /* Purple check icon color */
+}
+
+.join-us .apply-btn {
+  background-color: #1273eb; /* Purple background color */
+  color: #FFFFFF; /* White text color */
+  padding: 12px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.join-us .apply-btn:hover {
+  background-color: #FFFFFF; /* White background color on hover */
+  color: #1273eb; /* Purple text color on hover */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .intro h2 {
+    font-size: 28px;
+  }
+
+  .intro p, .about-us p, .work-process li, .join-us p {
+    font-size: 16px;
+  }
+
+  .about-us h2, .work-process h2, .join-us h2 {
+    font-size: 24px;
+  }
+
+  .intro .join-btn, .join-us .apply-btn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+/* ... Rest of the CSS ... */
+
+/* Styles for Cards */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  gap: 30px;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  max-width: 300px;
+  width: 100%;
+}
+
+.card i {
+  font-size: 36px;
+  color: #1a1a2e;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #1a1a2e;
+}
+
+.card p {
+  color: #2b0b2b;
+}
+.categories {
+  background-color: #f8f8f8;
+  padding: 40px 0;
+  text-align: center; /* Center align the content inside the container */
+}
+
+.categories h2 {
+  margin-bottom: 40px;
+  color: #1a1a2e;
+}
+
+.card:nth-child(odd) {
+  margin-right: 0; /* Remove right margin for odd-numbered cards */
+}
+
+.card:nth-child(even) {
+  margin-left: 0; /* Remove left margin for even-numbered cards */
+}
+
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .card-container,
+  .categories .card-container {
+    grid-template-columns: 1fr;
+  }
+}

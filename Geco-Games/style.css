@@ -1,0 +1,215 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navigation bar */
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.navbar a {
+  color: #070f5a;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Support Banner Section */
+.support-banner {
+  background-color: #0b52bd;
+  text-align: center;
+  padding: 40px 0;
+  color: #fff;
+}
+
+.support-banner h1 {
+  font-size: 48px;
+}
+
+.support-banner p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* FAQs Section */
+.faqs {
+  background-color: #fff;
+  padding: 40px 0;
+}
+
+.faqs h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.faq-card {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  max-width: 400px;
+}
+
+.card i {
+  font-size: 48px;
+  color: #0997e9;
+}
+
+.card h3 {
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 16px;
+}
+
+/* Live Chat Section */
+.live-chat {
+  background-color: #6835f3;
+  text-align: center;
+  padding: 40px 0;
+  color: #fff;
+}
+
+.live-chat h2 {
+  font-size: 32px;
+}
+
+.live-chat p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.additional-support {
+  background-color: #f2f3f5;
+  padding: 40px 0;
+}
+.troubleshooting,
+.video-tutorials,
+.community-forums,
+.knowledge-base,
+.account-support,
+.game-updates,
+.feedback-form {
+  background-color: #fff;
+  padding: 40px 0;
+}
+
+.troubleshooting h2,
+.contact-us h2,
+.video-tutorials h2,
+.community-forums h2,
+.knowledge-base h2,
+.account-support h2,
+.game-updates h2,
+.feedback-form h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+.additional-support h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.support-card {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.support-card .card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  max-width: 400px;
+}
+
+.support-card .card i {
+  font-size: 48px;
+  color: #6c5ce7; /* Bluish-purple color */
+}
+
+.support-card .card h3 {
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.support-card .card p {
+  font-size: 16px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  /* Media queries for responsive layout adjustments */
+}
+/* Footer Section */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #00385e;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #1273eb;
+}
+
+.btn-secondary {
+  background-color: #2112f3;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .faq-card, .resource-card {
+    justify-content: center;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+}
