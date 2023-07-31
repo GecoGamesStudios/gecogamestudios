@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="games.css">
+    <title>Geco games page</title>
+</head>
+<body>
+
+    
+    <span><h2>Discover our games</h2></span>
+    
+    
+    <div class="slideshow-container">
+        <div class="slide fade">
+            <img src="inshimu.png" alt="inshimu">
+            <div class="slide-caption">Inshimu 2</div>
+        </div>
+        <div class="slide fade">
+            <img src="LetterLoop.png" alt="LetterLoop">
+            <div class="slide-caption">Letter Loop world tour</div>
+        </div>
+        <div class="slide fade">
+            <img src="ourLastPrayer.png" alt="our last preayer arena">
+            <div class="slide-caption">our last prayer arena</div>
+        </div>
+    </div>
+    <main>
+        <section class="game-card">
+            <img src="inshimu.png" alt="inshimu">
+            <h2>INSHIMU 2</h2>
+            <p>Inshimu Villa is in dire need of assistance as it faces an attack from the destructive Sap Obstacles. The Bee Team awaits your command to utilize the Stinger Cannons and protect the villa by relentlessly shooting down these threats.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.GecoGames.Inshimu">Download now</a>
+        </section>
+        <section class="game-card">
+            <img src="ourLastPrayer.png" alt="our last prayer">
+            <h2>OUR LAST PRAYER ARENA</h2>
+            <p>Experience the adrenaline of "Our Last Prayer," an exclusive 2D mobile multiplayer shooter game. Test your reflexes and strategy in captivating game modes and beautifully designed maps.
+            </p>
+            <a href="https://play.google.com/store/apps/details?id=com.GECOGamesLLC.OurLastPrayer">Download Now</a>
+        </section>
+        
+        <section class="game-card">
+            <img src="LetterLoop.png" alt="letter loop world tour">
+            <h2>LETTER LOOP WORLD TOUR</h2>
+            <p>"Letter Loop" is an addictive word game that combines captivating story scenes with challenging puzzles, including word searches, anagrams, and crosswords.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.GecoGames.LetterLoopWorldTour&hl=en_US">Download Now</a>
+        </section>
+    
+    </main>
+    <footer>
+        <p>&copy; 2023 <a href="http://gecogamesstudios.com/">Geco games studio</a> rights reserved.</p>
+    </footer>
+    <script>
+        let slideIndex = 0;
+
+function showSlides() {
+    const slides = document.getElementsByClassName("slide");
+    const captions = document.getElementsByClassName("slide-caption");
+
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slideIndex++;
+
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+
+    setTimeout(showSlides, 3000); // Change slide every 3 seconds
+}
+
+showSlides();
+
+
+
+
+    </script>
+
+
+    
+</body>
+</html>
