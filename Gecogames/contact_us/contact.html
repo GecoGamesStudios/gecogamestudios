@@ -4,179 +4,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Geco Games</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <style>
-        /* Styles for header and other sections (remain unchanged) */
-
-        /* Styles for contact form */
-        .contact-form {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f9f9f9;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .contact-form h2 {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #333;
-        }
-
-        .contact-form input[type="text"],
-        .contact-form input[type="email"],
-        .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-
-        .contact-form textarea {
-            resize: vertical;
-            min-height: 100px;
-        }
-
-        .contact-form button {
-            display: block;
-            width: 100%;
-            padding: 10px;
-            background-color: #23d6f5;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            font-size: 18px;
-            cursor: pointer;
-        }
-
-        .contact-form button:hover {
-            background-color: #1b9fe2;
-        }
-
-        .contact-web {
-            text-align: center;
-            cursor: pointer;
-            margin-bottom: 10px;
-        }
-        .contact-form-us {
-            display: flex;
-            padding: 8px;
-            border: 2px;
-            border-radius: 2px;
-            justify-content: space-between;
-            font-size: 24px;
-        }
-        /* Contact details styles */
-        .contact-details {
-            display: flex;
-            justify-content: center;
-            margin-top: 30px;
-            color: #555;
-        }
-
-        .contact-details p {
-            margin-bottom: 10px;
-        }
-
-        .contact-details i {
-            margin-right: 5px;
-            color: #333;
-        }
-        .contact-details a {
-            justify-content: space-between;
-        }
-
-        /* Catchy styles */
-        body {
-            background-color: #f1f1f1;
-        }
-
-        .catchy-message {
-            text-align: center;
-            color: #333;
-            font-size: 24px;
-            margin-bottom: 30px;
-            padding: 20px;
-            background-color: #23d6f5;
-            border-radius: 5px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .catchy-icon {
-            animation: spin 4s linear infinite;
-        }
-
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-
-        /* Footer styles */
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        footer a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="contact.css">
 </head>
 <body>
-    <!-- Header section (remain unchanged) -->
+    <!-- Header section -->
+    <header>
+            <div class="logo">
+                <a href="./home.html">
+                    <img src="../images/gecostudio.jpg" alt="Geco Icon">
+                </a>
+            </div>
+            <!--three line hambuger menu-->
+            <div class="hamburger-container">
+                <div class="hamburger-menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+            <!--Navigation links-->
+            <div class="navigation-wrapper">
+                <nav class="navigation-menu">
+                    <a href="../home.html">Home</a>
+                    <a href="./games_page/games.html">Games</a>
+                    <a href="../community/community.html">Community</a>
+                    <a href="../contact_us/contact.html">Contact Us</a>  
+                    <a href="./our_team/our_team.html">Support</a>
+                    <a href="./Geco-Games/DevelopUs.html">Developers</a></li>
+                    <div class="user-login">
+                        <a href="../login/login.html"><i class="fas fa-sign-in-alt"></i>Log In</a>
+                        <a href="#"><i class="fas fa-user-plus"></i>Sign Up</a>
+                    </div>
+                </nav>
+            </div>
+    </header>
 
-    <!-- Catchy message section -->
-    <div class="catchy-message">
-        <i class="fas fa-gamepad catchy-icon"></i>
-        <p>Got a gaming idea or feedback?</p>
-        <p>Share it with us!</p>
-    </div>
-
-    <!-- Contact Us form section -->
-    <div class="contact-form">
-        <h2>Contact Us</h2>
-        <form action="#" method="post">
+    <!-- Contact form section -->
+    <div class="contact-container">
+        <h2>We'd Love to Hear From You</h2>
+        <form class="contact-form" action="#" method="post">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <textarea name="message" placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
         </form>
-        <div class="contact-form-us">
-            <div class="contact-web">
-                <i class="fab fa-whatsapp" style="color: green;"></i> Chat Live
-            </div>
-            <div class="contact-web">
-                <i class="fab fa-facebook" style="color: blue;"></i> Facebook
-            </div>
-            <div class="contact-web">
-                <i class="fab fa-instagram" style="color: maroon;"></i> Instagram
-            </div>
+        <div class="contact-details">
+            <p><i class="fas fa-phone"></i> Phone: +260978516926</p>
+            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:contact@gecogames.com">info@gecogamesstudios.comm</a></p>
         </div>
     </div>
 
     <!-- Footer section -->
     <footer>
         <div class="contact-details">
-            <i class="fas fa-phone"></i> <p>Phone: +1 (123) 456-7890</p>
-            <i class="fas fa-envelope"></i> <p>Email: contact@gecogames.com</p>
-            <i class="fas fa-map-marker-alt"></i> <p>Address: 123 Geco Street, Cityville</p>
-            <!-- Add more contact information as needed -->
+            <p>Follow Us:</p>
+            <a href="#" style="color: rgb(11, 47, 109);" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" style="color: rgb(0, 119, 255);" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" style="color: maroon;" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
         <div class="contact-details">
-            <a href="#">About Us</a>
-            <a href="../index2.html">Home</a>
-            <a href="../community/community.html">Community</a>
+            <a href="#">About Us</a>|
+            <a href="../community/community.html">Community</a>|
+            <a href="../home.html">Home</a>
         </div>
     </footer>
+
+    <script src="./contact.js"></script>
 </body>
 </html>

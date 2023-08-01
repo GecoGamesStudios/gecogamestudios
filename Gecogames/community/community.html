@@ -7,21 +7,36 @@
     <link rel="stylesheet" href="community.css">
 </head>
 <body>
-   <header>
-    <div class="back-button">
-        <button onclick="goBack()"><i class="fas fa-arrow-left"></i>Go Back</button><br><br>
-
-        <script>
-            function goBack() {
-                window.history.back();
-                href("../../index2.html");
-            }
-        </script>
-    </div>
-
-    <div class="geco-studio">
-        <img src="../images/gecostudio.jpg" style="width: 80%; height: 28px;" alt="">
-    </div>
+    <header>
+        <div class="logo">
+            <a href="./home.html">
+                <img src="../images/gecostudio.jpg" alt="Geco Icon">
+            </a>
+        </div>
+        <!--three line hambuger menu-->
+        <div class="hamburger-container">
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+        <!--Navigation links-->
+        <div class="navigation-wrapper">
+            <nav class="navigation-menu">
+                <a href="./games_page/games.html">Games</a>
+                <a href="../community/community.html">Community</a>
+                <a href="../contact_us/contact.html">Contact Us</a>  
+                <a href="./our_team/our_team.html">Support</a>
+                <a href="./Geco-Games/DevelopUs.html">Developers</a>
+                <div class="user-login">
+                    <a href="../login/login.html"><i class="fas fa-sign-in-alt"></i>Log In</a>
+                    <a href="#"><i class="fas fa-user-plus"></i>Sign Up</a>
+                </div>
+            </nav>
+        </div>
+      
+    </header>
 
     <div class="welcome-text">
         <h2>Welcome To Community Hub!</h2>
@@ -119,5 +134,8 @@
         </div>
       
     </footer>
+
+    <script src="./community.js"></script>
+
 </body>
 </html>
