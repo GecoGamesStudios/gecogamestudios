@@ -32,7 +32,7 @@ header {
 
 .logo {
   flex: 1;
-  max-width: 150px; /* Adjust logo width */
+  max-width: 150px;
 }
 
 .logo img {
@@ -41,7 +41,7 @@ header {
 }
 
 .hamburger-menu {
-  display: none;
+  display: inline-block;
   cursor: pointer;
 }
 
@@ -58,13 +58,14 @@ header {
 }
 
 .navigation-menu {
-  display: flex;
+  display: none;
   align-items: center;
   list-style: none;
   margin-left: 40px;
 }
 
 .navigation-menu a {
+  display: block;
   text-decoration: none;
   color: #fff;
   font-size: 18px;
@@ -110,41 +111,51 @@ header {
 }
 
 /* Hamburger Menu for Smaller Screens */
-@media screen and (max-width: 768px) {
-  .hamburger-menu {
-      display: flex;
-      flex-direction: column;
-  }
 
-  .navigation-wrapper {
-      display: flex;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      background-color: #333;
-  }
-
-  .navigation-wrapper.active {
-    display: flex;
-    flex-direction: column;
+.navbar {
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: #fff;
 }
 
+.logo img {
+  width: 100px;
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger-menu .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+}
+
+.navigation-menu {
+  display: flex;
+}
+
+.navigation-menu a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger-menu {
+      display: block;
+  }
   .navigation-menu {
       display: none;
       flex-direction: column;
-      align-items: center;
   }
-
-  .navigation-menu a {
-      margin: 10px 0;
-      padding: 10px;
-      width: 100%;
-      text-align: center;
-  }
-
-  /* Show the navigation menu when the hamburger menu is active */
-  .header-container.active .navigation-wrapper {
+  .navigation-menu.active {
       display: flex;
   }
 }
@@ -319,6 +330,7 @@ header {
 }
 
 .image-container .catchy-text h2 {
+  color: #16d452;
   font-size: 36px;
   margin-bottom: 10px;
 }
@@ -552,5 +564,3 @@ footer {
   background-color: #358750;
 }
 
-/* Add your additional CSS styles here */
-/* ... */

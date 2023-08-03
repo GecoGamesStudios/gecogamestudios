@@ -1,10 +1,15 @@
 
-const hamburgerMenu = document.querySelector('.hamburger-menu');
+/*const hamburgerMenu = document.querySelector('.hamburger-menu');
 const navLinks = document.querySelector('.navigation-wrapper');
 
 hamburgerMenu.addEventListener('click', () => {
   navLinks.classList.toggle('active');
-});
+});*/
+
+function toggleNavigation() {
+  const navigationMenu = document.getElementById("navigationMenu");
+  navigationMenu.classList.toggle("active");
+}
 
 
 let slideIndex = 0;
