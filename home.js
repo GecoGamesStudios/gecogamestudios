@@ -6,9 +6,16 @@ hamburgerMenu.addEventListener('click', () => {
   navLinks.classList.toggle('active');
 });*/
 
-function toggleNavigation() {
+/*function toggleNavigation() {
   const navigationMenu = document.getElementById("navigationMenu");
   navigationMenu.classList.toggle("active");
+}*/
+function toggleNavigation() {
+  const navigationMenu = document.getElementById('navigationMenu');
+  const navigationWrapper = document.querySelector('.navigation-wrapper');
+
+  navigationMenu.classList.toggle('show');
+  navigationWrapper.style.display = navigationMenu.classList.contains('show') ? 'block' : 'none';
 }
 
 
@@ -16,28 +23,27 @@ let slideIndex = 0;
 showSlides();
 
 function showSlides() {
-    let slides = document.getElementsByClassName("slide");
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {
-        slideIndex = 1;
-    }
-    slides[slideIndex - 1].style.display = "block";
-    setTimeout(showSlides, 3000); // Change slide every 3 seconds
+  let slides = document.getElementsByClassName("slide");
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+  slides[slideIndex - 1].style.display = "block";
+  setTimeout(showSlides, 3000); // Change slide every 3 seconds
 }
 
 function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+window.addEventListener("scroll", function() {
+  const backToTopBtn = document.getElementById("back-to-top-btn");
+  if (window.scrollY > 300) {
+    backToTopBtn.style.display = "block";
+  } else {
+    backToTopBtn.style.display = "none";
   }
-  
-  window.addEventListener("scroll", function() {
-    const backToTopBtn = document.getElementById("back-to-top-btn");
-    if (window.scrollY > 300) {
-      backToTopBtn.style.display = "block";
-    } else {
-      backToTopBtn.style.display = "none";
-    }
-  });
-  
+});
