@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="/css/checkout.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+  <body>
+    <main class="checkout-container">
+      <section class="checkout-form">
+        <h2>Payment Details</h2>
+        <form>
+          
+          <label  for="first-name">First Name:</label>
+          <input type="text" id="first-name" name="first-name" placeholder="Joseph" required>
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name" name="last-name" placeholder="Mwamba" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="mwambaj2002@gmail.com" required>
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="0777711657" required>
+  
+          <div class="payment-methods">
+            <h3>Select Payment Method</h3>
+            <select name="payment" id="payment">
+              <option value="card">Card <i class="fas fa-credit-card"></i></option>
+              <option value="mobile-money">Mobile Money <i class="fas fa-mobile-alt"></i></option>
+              <option value="paypal">PayPal <i class="fab fa-paypal"></i></option>
+              <option value="bitcoin">Bitcoin <i class="fab fa-bitcoin"></i></option>
+
+            </select>
+          </div>
+  
+          <button class="checkout-button" type="submit">Proceed</button>
+        </form>
+        <section class="security-assurance">
+              <i class="fas fa-shield-alt"></i>
+            <h2>Your Security is Our Priority</h2>
+            <p>We use advanced encryption to secure your payment information. Your data is safe with us.</p>
+            <div class="security-icons">
+            </div>
+          </section>
+      </section>
+  
+      <section class="order-summary">
+        <h2>Order Summary</h2>
+        <div class="product">
+          <h3>Game Pass Subscription</h3>
+          <p>Duration: 1 Month</p>
+          <p>Price: ZMW 99</p>
+        </div>
+        <hr>
+        <div class="payment-info">
+          <h3>Payment Information</h3>
+          <p>Total Amount: ZMW 99</p>
+          <p>Payment Method: Card</p>
+        </div>
+        <section class="benefits-overview">
+            <h2>Benefits of Game Pass</h2>
+              <p>Access to a library of premium games</p>
+              <p>Exclusive in-game content and rewards</p>
+              <p>Early access to new releases</p>
+              <p>Discounts on future game purchases</p>
+          </section>
+        <hr>
+        <div class="additional-info">
+          <h3>Additional Information</h3>
+          <p>If you have any questions or need assistance, please don't hesitate to contact our customer support team.</p>
+          <p>Email: support@gecogames.com</p>
+          <p>Phone: 1234567890</p>
+        </div>
+      </section>
+      
+  
+    </main>
+  
+    <script src="scripts.js"></script>
+  </body>
+  </html>
