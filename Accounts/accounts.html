@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="accounts.css">
+  <script src="script.js"></script>
+  <title>Dashboard</title>
+</head>
+<body>
+  <div class="dashboard">
+    <div class="sidebar">
+      <div class="logo">
+        <img src="img/GECO.jpg" alt="Company Logo">
+      </div>
+      <nav class="nav-links">
+        <a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+        <a href="#"><i class="fas fa-book"></i> My Library</a>
+        <a href="#"><i class="fas fa-gamepad"></i> Games</a>
+        <a href="#"><i class="fas fa-user"></i> My Account</a>
+        <a href="#"><i class="fas fa-history"></i> History</a>
+        <a href="#"><i class="fas fa-users"></i> Friends</a>
+      </nav>
+      <a href="#" class="logout"><i class="fas fa-sign-out-alt"></i> Log Out</a>
+    </div>
+     
+    </div>
+    <div class="main-content">
+      <div class="header">
+        <div class="search-bar">
+          <input type="text" placeholder="Search...">
+          <i class="fas fa-search"></i>
+        </div>
+        <div class="icons">
+          <i class="far fa-envelope"></i>
+          <i class="far fa-bell"></i>
+        </div>
+        <div class="profile">
+          <img src="/images.png" alt="Profile Picture">
+          <span>Joseph Mwamba </span>
+        </div>
+      </div>
+  </div>
+    </div>
+  </div>  
+  <div class="dashboard-section">
+    <div class="account-details">
+      <h2>Welcome, Joseph Mwamba</h2>
+      <p>Your subscription: Gold</p>
+      <p>Games in library: 7</p>
+      <div class="game-stats">
+        <h3>Game Statistics</h3>
+        <p>Total Games Played: 3</p>
+        <p>High Score: 1200</p>
+      </div>
+    </div>
+    <div class="new-game-announcement">
+      <h2>A New Game by GECO</h2>
+      <p>Exciting adventures await! Get ready for our latest game release.</p>
+      <button class="check-now-button">Check Now</button>
+    </div>
+  </div>
+ <!--dashboard-section -->
+ <div class="center-container" style="margin-left: 270px; margin-top: 50px; margin-right: 370px; box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1); border-radius: 10px; padding: 20px;">
+  <h3>Our Popular Games</h3>
+  <!-- Slider Container -->
+  <div class="slider-container">
+    <div class="slider">
+      <div class="slide active"><img src="img/game.jpg">Game 1</div>
+      <div class="slide"><img src="img/game.jpg">Game 2</div>
+      <div class="slide"><img src="img/game.jpg">Game 3</div>
+      <!-- Add more slides as needed -->
+    </div>
+    <!-- Previous and Next Buttons -->
+    <button class="prev-button" onclick="prevSlide()">&#10094;</button>
+    <button class="next-button" onclick="nextSlide()">&#10095;</button>
+  </div>
+</div>
+
+  <div class="right-sidebar">
+    <div class="whats-your-plan">
+      <h3>What's Your Plan?</h3>
+      <div class="game-pass-packages">
+        <div class="package">
+          <i class="fas fa-gamepad icon"></i>
+          <h3>Standard</h3>
+          <p class="price">ZMW 49/month</p>
+        </div>
+        <div class="package">
+          <i class="fas fa-gem icon"></i>
+          <h3>Gold</h3>
+          <p class="price">ZMW 99/month</p>
+        </div>
+        <div class="package">
+          <i class="fas fa-crown icon"></i>
+          <h3>Platinum</h3>
+          <p class="price">ZMW 199/month</p>
+        </div>
+        <div class="account-balance">
+          <h3>Account Balance</h3>
+          <p>Your current balance: K150</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="daily-activities">
+      <h2>Daily Activities</h2>
+      <div class="activity">
+        <h3>Inshimu 2</h3>
+        <p>Play the Challenge available and earn a Special power up</p>
+        <p><span class="icon">📅</span> Date: July 20</p>
+      </div>
+      <div class="activity">
+        <h3>Letter Loop</h3>
+        <p>New Level coming </p>
+        <p><span class="icon">📅</span> Date: July 21</p>
+      </div>
+      <div class="activity">
+        <h3>Our Last Prayer</h3>
+        <p>New weapons</p>
+        <p><span class="icon">📅</span> Date: July 22</p>
+      </div>
+    </div>
+  </div>  
+
+
+
+
+  <!-- Rest of your HTML code here -->
+
+<script>
+  const sidebar = document.querySelector('.sidebar');
+  const logo = document.querySelector('.logo');
+  const mainContent = document.querySelector('.main-content');
+
+  logo.addEventListener('click', () => {
+    sidebar.classList.toggle('open');
+    mainContent.classList.toggle('shift');
+  });
+
+  let currentSlide = 0;
+
+  function showSlide(slideIndex) {
+    const slides = document.querySelectorAll('.slide');
+    if (slideIndex < 0) {
+      currentSlide = slides.length - 1;
+    } else if (slideIndex >= slides.length) {
+      currentSlide = 0;
+    }
+    const translateX = -currentSlide * 100;
+    document.querySelector('.slider').style.transform = `translateX(${translateX}%)`;
+  }
+
+  function prevSlide() {
+    currentSlide--;
+    showSlide(currentSlide);
+  }
+
+  function nextSlide() {
+    currentSlide++;
+    showSlide(currentSlide);
+  }
+
+  // Automatically advance the slider every 3 seconds
+  setInterval(() => {
+    nextSlide();
+  }, 3000);
+
+  showSlide(currentSlide);
+</script>
+</body>
+</html>
+
+  
+</body>
+</html>

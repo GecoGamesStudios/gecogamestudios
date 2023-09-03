@@ -1,0 +1,304 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+
+  .sidebar {
+    width: 250px;
+    height: 100%;
+    background-color: #343a40;
+    padding: 5px;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  
+  .logo img {
+    margin-top: 20px;
+    width: 100px;
+  }
+  
+  .nav-links {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+  }
+  .dashboard {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+  }
+
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 15px 60px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s, padding-left 0.2s;
+  }
+  .nav-links a:hover {
+    background-color: #2e74ff; 
+    padding-left: 25px; 
+}
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  .nav-links a i {
+    margin-right: 10px;
+  }
+  
+  .logout {
+    margin-top: auto; 
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  .logo,
+  .logout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px; 
+    color: #fff;
+  }
+  .main-content {
+    margin-left: 250px;
+    padding: 20px;
+    background-color: #fff;
+    padding: 20px;
+   border-radius: 10px;
+  }
+  .sidebar.open {
+    width: 250px;
+  }
+  
+  .main-content.shift {
+    margin-left: 250px;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    margin-top: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    max-width: 250px;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    border: none;
+    outline: none;
+  }
+  
+  .search-bar i {
+    margin-left: 10px;
+  }
+  
+  .icons {
+    display: flex;
+  }
+  
+  .icons i {
+    font-size: 18px;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .profile span {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .dashboard-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('img/wayfinder.jpeg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: calc(50vh - 10px);
+    padding: 20px;
+    margin-left: 270px; 
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .account-details,
+  .new-game-announcement {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .account-details h2,
+  .new-game-announcement h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .account-details p,
+  .new-game-announcement p {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .check-now-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  .check-now-button:hover {
+    background-color: #0056b3;
+  }
+/* Add this to your CSS */
+.right-sidebar {
+  width: 25%; /* Adjust the width as needed */
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  position: absolute; /* Change position to absolute */
+  top: 560px; /* Position from the top of the viewport */
+  right: 0; /* Position from the right of the viewport */
+  height: 100%; /* Make it occupy the full height of the viewport */
+}
+
+/*slider*/
+.slider-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  flex: 0 0 auto;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.slide img {
+  max-width: 100%;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.prev-button {
+  left: 0;
+  padding: 10px 20px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.next-button {
+  right: 0;
+  padding: 10px 20px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+ 
+ 
+  .whats-your-plan {
+    background-color: #3734db;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+ 
+  .game-pass-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .game-pass-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .game-pass-list .icon {
+    margin-right: 10px;
+  }
+  
+  .daily-activities {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .activity {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+ 
+  .icon {
+    margin-right: 5px;
+  }
+  
+ 
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
