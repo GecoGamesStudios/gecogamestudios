@@ -1,0 +1,301 @@
+
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  .parallax-header {
+    position: relative;
+    height: 60vh; 
+    overflow: hidden; 
+  }
+  
+  .slideshow {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: flex;
+    transition: transform 1s ease;
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+    height: 100%;
+    background-size: cover; 
+    background-position: center;
+  }
+  
+  .parallax-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+  }
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .checkout-button {
+    background-color: #1E90FF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .checkout-button:hover {
+    background-color: #005BB5;
+  }
+  .subscribe-button {
+    background-color: #1E90FF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .subscribe-button:hover {
+    background-color: #005BB5;
+  }
+  .checkout-icon {
+    margin-right: 5px;
+  }
+  .close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .header-section {
+    text-align: center;
+    background-color: #f0f0f0; 
+    padding: 40px 0;
+  }
+  
+  .header-section h2 {
+    color: #333333; 
+    margin-bottom: 20px;
+  }
+  
+  .header-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .header-card {
+    width: calc(30% - 20px); 
+    background-color: #ffffff; 
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-card i {
+    font-size: 36px;
+    color: #007bff; 
+    margin-bottom: 15px;
+  }
+  
+  .header-card h3 {
+    color: #333333; 
+    margin-bottom: 10px;
+  }
+  
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .game-pass {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .game-pass h2 {
+    color: #333333; 
+    margin-bottom: 20px;
+  }
+  
+  .game-pass-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .game-pass-option {
+    background-color: #ffffff; 
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 0 0 calc(33.33% - 40px);
+    max-width: 300px;
+  }
+  
+  .game-pass-option i {
+    font-size: 40px;
+    color: #061b91; 
+    margin-bottom: 10px;
+  }
+  
+  .game-pass-option h3 {
+    color: #333333;
+    margin-bottom: 15px;
+  }
+  
+  .game-pass-option p {
+    color: #666666; 
+    margin-bottom: 10px;
+  }
+  
+  .game-pass-option .price {
+    font-size: 24px;
+    color: #0c229c; 
+    margin-bottom: 15px;
+  }
+  
+  .game-pass-option .btn {
+    display: inline-block;
+    background-color: #005BB5; 
+    color: #ffffff; 
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .game-pass-option .btn:hover {
+    background-color: #7b7766; 
+  }
+
+.exclusive-game-downloads,
+.in-game-events,
+.game-pass-community,
+.exclusive-game-guides,
+.game-pass-rewards,
+.game-pass-challenges {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.exclusive-game-downloads h2,
+.in-game-events h2,
+.game-pass-community h2,
+.exclusive-game-guides h2,
+.game-pass-rewards h2,
+.game-pass-challenges h2 {
+  color: #333333; 
+  margin-bottom: 15px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.card {
+  width: 300px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #ffffff; 
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  color: #333333;
+}
+
+.card p {
+  color: #666666;
+}
+
+
+.social-integration {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .social-integration h2 {
+    color: #333333; 
+    margin-bottom: 15px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .hero-content {
+      padding: 20px;
+    }
+  
+    .hero-content h1 {
+      font-size: 24px;
+    }
+  
+    .hero-content p {
+      font-size: 16px;
+    }
+  
+    .hero-content .btn {
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+  
+    .header-card {
+      width: 100%;
+      margin-right: 0;
+    }
+  
+    .game-pass-cards {
+      flex-direction: column;
+    }
+  
+    .game-pass-card {
+      width: 100%;
+    }
+  }

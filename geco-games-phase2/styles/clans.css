@@ -1,0 +1,661 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: none;
+    max-width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+.dashboard {
+  background-color: #1273eb;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+}
+
+
+header {
+  background-color: #1273eb;
+  border-radius: 2px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 14px;
+  text-align: left;
+}
+.title {
+  text-align: left;
+}
+
+/* Navigation styles */
+.navigation-wrapper {
+  background-color: #1273eb;
+  color: white;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.menu-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 10px;
+  height: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  margin: 10px;
+}
+
+.menu-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu-card a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.menu-card span {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+/* Styles for the search bar */
+.main-search {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  border: none;
+  background-color: #f0f2f5;
+  border-radius: 40px;
+}
+
+.main-search input[type="text"] {
+  border: none;
+  background-color: transparent;
+  color: #1d2129;
+  margin-left: 5px;
+  width: 60px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+/* Styling for the search icon */
+.main-search .search-icon {
+  color: #1d2129;
+}
+
+
+.menu-toggle {
+  color: black;
+  position: absolute;
+  font-size: 34px;
+  top: 16px;
+  right: 0;
+  display: none; /* Hide the toggle by default on larger screens */
+  cursor: pointer;
+  padding: 10px;
+  z-index: 100; /* Ensure the toggle is above other elements */
+}
+
+
+@media (max-width: 768px) {
+  /* Show the toggle icon on smaller screens */
+  .menu-toggle {
+      display: block;
+  }
+  
+  /* Hide the menu items by default on smaller screens */
+  .menu-items {
+      display: none;
+  }
+
+  /* Show the menu items when the toggle is active */
+  .menu-items.active {
+      display: flex;
+      flex-wrap: wrap;
+  }
+}
+
+
+.user-menu {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Adjust margin for spacing */
+}
+
+.user-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    margin: 0 10px;
+    padding: 5px 10px; /* Adjust padding for spacing */
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.clans2 {
+    text-align: center;
+    background-color: #1273eb;
+    color: white;
+    font-size: 24px;
+    width: 40%;
+    margin-left: 400px;
+    border: 24px;
+    border-radius: 24px;
+    justify-content: center;
+    align-items: center;
+}
+.clans h1 {
+    padding: 8px;
+    background-color: #1273eb;
+
+}
+
+.user-menu a:hover {
+    background-color: white;
+    color: #333;
+}
+
+.welcome-message {
+    color: white;
+    font-size: 24px; /* Increase font size for a title-like appearance */
+    text-align: center; /* Center align the text */
+    margin: 20px 0; /* Add margin for spacing from the top */
+}
+
+.available-clans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.clan-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.clan-card img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.clan-name {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.clan-description {
+    color: #777;
+}
+
+.join-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.join-button:hover {
+    background-color: #555;
+}
+
+.user-name {
+    font-weight: bold;
+}
+/* Style for the search bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 20px; /* Adjust margin for spacing */
+}
+
+.search-bar input {
+    border: none;
+    background: none;
+    color: black;
+    width: 150px; /* Adjust width as needed */
+    padding: 5px;
+    outline: none;
+}
+
+.search-bar button {
+    border: none;
+    background: none;
+    color: black;
+    cursor: pointer;
+}
+  
+/* Media query for screens up to 768px */
+/*@media (max-width: 768px) {
+    /* Adjust navigation wrapper alignment for smaller screens *
+    .navigation-wrapper {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 0;
+    }
+
+    .available-clans {
+        justify-content: center;
+        /*gap: 10px;*
+    }    
+  
+    /* Update navigation menu for smaller screens *
+    .navigation-menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      background-color: #333;
+      position: absolute;
+      top: 60px;
+      left: 0;
+    }
+  
+    /* Display navigation menu when active *
+    .navigation-menu.active {
+      display: flex;
+    }
+
+    .clan-card {
+        max-width: 100%; /* Adjust as needed *
+      }
+
+      .event-card {
+        max-width: calc(50% - 20px); /* Adjust as needed *
+      }
+  
+    /* Make the user login section full width *
+    .user-login {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .logo img {
+        max-width: 60px;
+        height: auto;
+      
+    }
+    .welcome-message {
+            font-size: 18px;
+          }
+    .navigation-menu li {
+      margin-right: 10px; /* Adjust spacing *
+    }
+  }*/
+  
+
+
+  
+
+/* Style for the clan card */
+
+.available-clans {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+    justify-content: center;
+    gap: 20px; /* Add spacing between clan cards */
+    padding: 20px;
+}
+.clan-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+    max-width: 300px; /* Adjust as needed */
+}
+
+.clan-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Style for the clan name */
+.clan-name {
+    font-size: 24px;
+    margin: 0;
+    color: #1273eb;
+}
+
+/* Style for the clan description */
+.clan-description {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #666;
+}
+
+/* Style for the clan logo */
+.clan-content img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+/* Style for the join button */
+.join-button {
+    background-color: #1273eb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.join-button:hover {
+    background-color: #50c878;
+}
+
+h2 { text-align: center;
+    color: #1273eb;
+
+}
+.tournaments-events {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start; /* Align items at the top of the flex container */
+    background-color: #f7f7f7;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style for each event card */
+.event-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    max-width: 300px; /* Adjust as needed */
+    transition: transform 0.2s ease-in-out;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Style for the event titles */
+.event-title {
+    font-size: 24px;
+    margin: 0;
+    color: #1273eb;
+}
+
+/* Style for the event date */
+.event-date {
+    font-size: 14px;
+    margin: 10px 0;
+    color: none;
+}
+
+/* Style for the event description */
+.event-description {
+    font-size: 16px;
+    margin: 10px 0;
+    color: none;
+}
+
+/* Style for the event register button */
+.event-button {
+    background-color: #1273eb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.event-button:hover {
+    background-color: #50c878;
+}
+
+/* Style for the discussion forums section */
+.discussion-forums {
+    background-color: #f7f7f7;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.discussion-forums h2 {
+    font-size: 28px;
+    color: #61f34e;
+    margin-bottom: 20px;
+}
+
+.discussion-thread {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 89%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.discussion-thread:hover {
+    transform: translateY(-5px);
+}
+
+.user-avatar img {
+    width: 100%;
+    height: 50%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.thread-title {
+    font-size: 24px;
+    margin: 0;
+    color: #1273eb;
+}
+
+.thread-info {
+    font-size: 14px;
+    margin: 10px 0;
+    color: none;
+}
+
+.thread-content {
+    font-size: 16px;
+    margin: 10px 0;
+    color: none;
+}
+
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.like-button, .subscribe-button, .reply-button {
+    background: none;
+    border: none;
+    color: rgb(46, 173, 196);
+    cursor: pointer;
+}
+
+.like-button:hover, .subscribe-button:hover, .reply-button:hover {
+    background: none;
+    border: none;
+    color: rgba(247, 69, 49, 0.84);
+    cursor: pointer;
+}
+
+.like-button i, .subscribe-button i, .reply-button i {
+    margin-right: 5px;
+}
+
+.section {
+    background-color: #f7f7f7;
+    padding: 20px;
+    text-align: center;
+}
+
+.player-profile {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 89%;
+    margin: 0 auto;
+}
+
+.player-profile h2 {
+    font-size: 24px;
+    color: #1273eb;
+    margin-bottom: 20px;
+}
+
+.player-card {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-info img {
+    width: 100%;
+    height: 50%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.player-profile img {
+    width: 100%;
+    height: 50%;
+    border-radius: 8px;
+}
+
+.player-info h3 {
+    font-size: 20px;
+    color: rgb(46, 173, 196);
+    margin: 0;
+}
+
+.player-info p {
+    font-size: 16px;
+    color: none;
+    margin: 5px 0;
+}
+
+.player-achievements h3 {
+    font-size: 18px;
+    color: none;
+    margin-top: 20px;
+}
+
+.player-achievements ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.player-achievements li {
+    font-size: 16px;
+    color: none;
+    margin: 5px 0;
+}
+
+.player-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-info img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.award-section {
+    background-color: #f7f7f7;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.award-section p {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+}
+
+.player-achievements h3 {
+    color: #1273eb;
+}
+
+.book-now-button {
+    background-color: #1273eb;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.book-now-button:hover {
+    background-color: #50c878;
+}
+
+footer {
+    background-color: #50c878;
+}

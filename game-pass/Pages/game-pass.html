@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geco Games - Game Pass</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="/css/game-pass.css">
+</head>
+<body>
+  <header class="parallax-header">
+    <div class="slideshow">
+      <div class="slide" style="background-image: url('/Images/game-pass.jpg');"></div>
+      <div class="slide" style="background-image: url('/Images/mobile.png');"></div>
+      <div class="slide" style="background-image: url('/Images/riot\ x\ xbox.png');"></div>
+     
+    </div>
+    <div class="parallax-content">
+      <h1>Welcome to Geco Games</h1>
+      <p>Unlock a world of gaming with our exclusive Game Pass packages.</p>
+    </div>
+  </header>
+   
+  <section class="game-pass">
+    <div class="container">
+      <h2>Unlock Premium Features with Game Pass</h2>
+      <div class="game-pass-options">
+        <div class="game-pass-option">
+          <i class="fas fa-medal"></i>
+          <h3>Standard</h3>
+          <p>Ad-Free Gameplay</p>
+          <p>Exclusive Levels</p>
+          <p>Bonus In-Game Currency</p>
+          <p>Regular Updates</p>
+          <p class="price">ZMW 49/month</p>
+          <button class="subscribe-button" onclick="openCheckoutModal()">Subscribe Now</button>
+        </div>
+        <div class="game-pass-option">
+          <i class="fas fa-trophy"></i>
+          <h3>Gold</h3>
+          <p>Ad-Free Gameplay</p>
+          <p>Exclusive Levels</p>
+          <p>Bonus In-Game Currency</p>
+          <p>Enhanced Security</p>
+          <p class="price">ZMW 99/month</p>
+          <button class="subscribe-button" onclick="openCheckoutModal()">Subscribe Now</button>
+        </div>
+        <div class="game-pass-option">
+          <i class="fas fa-gem"></i>
+          <h3>Platinum</h3>
+          <p>Ad-Free Gameplay</p>
+          <p>Exclusive Levels</p>
+          <p>Unlimited In-Game Currency</p>
+          <p>Enhanced Security</p>
+          <p class="price">ZMW 199/month</p>
+          <button class="subscribe-button" onclick="openCheckoutModal()">Subscribe Now</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="checkoutModal">
+      <div class="modal-content">
+        <span class="close-button" onclick="closeCheckoutModal()">&times;</span>
+        <span class="checkout-icon">&#10148;</span> Check Out Now
+        <p>Thank you for choosing our Game Pass! Proceed to the checkout process.</p>
+        <button class="checkout-button" onclick="closeCheckoutModal()"> <a class="checkout-button" href="/Pages/checkout.html">Proceed To Checkout</a></button>
+        <span class="close-icon" onclick="closeCheckoutModal()">&#10006;</span>
+      </div>
+    </div>
+  
+    
+  </section>
+  <section class="header-section">
+    <div class="container">
+      <h2>Why Get the Game Pass?</h2>
+      <div class="header-cards">
+        <div class="header-card">
+          <i class="fas fa-gamepad"></i>
+          <h3>Access Exclusive Games</h3>
+          <p>Immerse yourself in a collection of handpicked games that are available only to Game Pass subscribers. Enjoy unique gaming experiences that you won't find anywhere else.</p>
+        </div>
+        <div class="header-card">
+          <i class="fas fa-trophy"></i>
+          <h3>Earn Incredible Rewards</h3>
+          <p>Participate in challenges and events to earn rewards and unlock exclusive in-game items, skins, and more. Elevate your gaming with a world of exciting rewards.</p>
+        </div>
+        <div class="header-card">
+          <i class="fas fa-users"></i>
+          <h3>Join a Thriving Community</h3>
+          <p>Connect with a community of passionate gamers. Share your experiences, discover new friends, and engage in lively discussions about your favorite games.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+<section class="exclusive-game-downloads">
+    <div class="container">
+      <h2><i class="fas fa-download"></i> Exclusive Game Downloads</h2>
+      <div class="cards-container">
+        <div class="card">
+          <h3>Discover New Games</h3>
+          <p>Access a collection of exclusive downloadable games available only to Game Pass subscribers. Discover new and exciting games that are not available to the general public.</p>
+        </div>
+        <div class="card">
+          <h3>Early Access</h3>
+          <p>Get early access to upcoming game releases and be among the first to experience new titles.</p>
+        </div>
+        <div class="card">
+          <h3>High-Quality Downloads</h3>
+          <p>Enjoy high-quality game downloads with fast and reliable servers for a smooth gaming experience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="in-game-events">
+    <div class="container">
+      <h2><i class="far fa-calendar-alt"></i> In-Game Events Calendar</h2>
+      <div class="cards-container">
+        <div class="card">
+          <h3>Stay Updated</h3>
+          <p>Stay updated with a calendar of upcoming in-game events and activities for Game Pass subscribers. Participate in special events, limited-time challenges, and exclusive in-game festivities.</p>
+        </div>
+        <div class="card">
+          <h3>Exclusive Rewards</h3>
+          <p>Earn exclusive in-game rewards by participating in special events and completing challenges.</p>
+        </div>
+        <div class="card">
+          <h3>Community Events</h3>
+          <p>Join community-driven in-game events and tournaments organized by fellow Game Pass members.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<section class="game-pass-community">
+    <div class="container">
+      <h2><i class="fas fa-users"></i> Game Pass Community</h2>
+      <div class="cards-container">
+        <div class="card">
+          <h3>Connect with Gamers</h3>
+          <p>Join our exclusive community platform for Game Pass subscribers to connect and share experiences. Interact with fellow gamers, participate in discussions, and get tips from other community members.</p>
+        </div>
+        <div class="card">
+          <h3>Exclusive Forums</h3>
+          <p>Access private forums dedicated to Game Pass members, where you can discuss games, share tips, and engage with developers.</p>
+        </div>
+        <div class="card">
+          <h3>Game Nights</h3>
+          <p>Participate in scheduled game nights and play with other Game Pass members in organized multiplayer sessions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="exclusive-game-guides">
+    <div class="container">
+      <h2><i class="fas fa-book"></i> Exclusive Game Guides</h2>
+      <div class="cards-container">
+        <div class="card">
+          <h3>Master the Games</h3>
+          <p>Access exclusive guides and tutorials to help you master the games in the Game Pass. Get expert tips and strategies from experienced players to enhance your gaming skills.</p>
+        </div>
+        <div class="card">
+          <h3>In-Depth Walkthroughs</h3>
+          <p>Explore comprehensive walkthroughs for challenging quests and levels, providing step-by-step instructions and solutions.</p>
+        </div>
+        <div class="card">
+          <h3>Secrets and Collectibles</h3>
+          <p>Unlock hidden secrets, discover collectibles, and uncover Easter eggs with our exclusive game guides.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="game-pass-rewards">
+    <div class="container">
+      <h2><i class="fas fa-gift"></i> Game Pass Rewards Program</h2>
+      <div class="cards-container">
+        <div class="card">
+          <h3>Earn Rewards</h3>
+          <p>Earn points for activities and redeem rewards as part of our Game Pass Rewards Program. Complete in-game challenges, refer friends to join the Game Pass, and participate in community events to earn points.</p>
+        </div>
+        <div class="card">
+          <h3>Exclusive Items</h3>
+          <p>Redeem your earned points for exclusive in-game items, skins, cosmetic upgrades, and more.</p>
+        </div>
+        <div class="card">
+          <h3>Special Discounts</h3>
+          <p>Enjoy special discounts on additional games, DLCs, and in-game purchases as a Game Pass Rewards member.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="game-pass-challenges">
+    <div class="container">
+      <h2><i class="fas fa-trophy"></i> Game Pass Challenges</h2>
+      <div class="cards-container">
+        <div class="card">
+          <h3>Compete and Win</h3>
+          <p>Participate in exclusive challenges and competitions with exciting rewards for Game Pass members. Test your skills in special game modes, timed challenges, and multiplayer tournaments.</p>
+        </div>
+        <div class="card">
+          <h3>Leaderboards</h3>
+          <p>Compete on leaderboards and prove your gaming prowess against other Game Pass subscribers.</p>
+        </div>
+        <div class="card">
+          <h3>Monthly Championships</h3>
+          <p>Join monthly championships and battle for the top spot in various gaming categories.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="social-integration">
+    <div class="container">
+      <h2><i class="fas fa-share-alt"></i> Social Integration</h2>
+      <div class="cards-container">
+        <div class="card">
+          <h3>Connect with Friends</h3>
+          <p>Integrate your social media accounts and connect with your friends. Share your gaming achievements, progress, and favorite moments directly from the Game Pass.</p>
+        </div>
+        <div class="card">
+          <h3>Share Gameplay Clips</h3>
+          <p>Record and share short gameplay clips with your friends on platforms like Facebook, Twitter, and Instagram to showcase your skills and experiences.</p>
+        </div>
+        <div class="card">
+          <h3>Invite Friends to Game</h3>
+          <p>Invite your friends to join the Game Pass and explore exclusive gaming content together. Compete, cooperate, and conquer challenges as a team!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="/js/script.js"></script>
+</body>
+</html>
