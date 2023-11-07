@@ -1,0 +1,325 @@
+:root {
+    --blue: #007bff;
+    --cyan: #17a2b8;
+    --primary: var(--blue);
+    --white: #fff;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --font-family-sans-serif: Arial, sans-serif;
+}
+
+body {
+    font-family: var(--font-family-sans-serif);
+    background-color: var(--light);
+    color: var(--dark);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    border: 2px solid #b9dee4;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-text {
+    width: 60%;
+    color: #000000;
+}
+
+.header-text h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.header-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background-color: #17a2b8;
+}
+
+.header-image {
+    width: 40%;
+    text-align: center;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.header-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about-geco-section {
+    background-color: var(--light);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.about-geco-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-geco-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.about-geco-content h2 {
+    color: var(--primary);
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.about-geco-content p {
+    font-size: 20px;
+}
+
+.game-dev-team-section {
+    background-color: var(--light);
+    padding: 20px;
+    border: 2px solid var(--cyan);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.game-dev-team-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.game-dev-team-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.game-dev-team-content h2 {
+    color: var(--primary);
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.team-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.team-member {
+    flex: 1;
+    background-color: var(--white);
+    border: 2px solid var(--cyan);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.team-member i {
+    font-size: 36px;
+    color: var(--primary);
+}
+
+.team-member h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 16px;
+}
+
+.awards-section {
+    background-color: var(--light);
+    padding: 20px;
+    border: 2px solid var(--cyan);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.awards-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.awards-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.awards-content h2 {
+    color: var(--primary);
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.awards-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.award {
+    flex: 1;
+    background-color: var(--white);
+    border: 2px solid var(--cyan);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.award i {
+    font-size: 36px;
+    color: var(--primary);
+}
+
+.award h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.award p {
+    font-size: 16px;
+}
+
+.career-section {
+    background-color: var(--light);
+    padding: 20px;
+    border: 2px solid var(--cyan);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.career-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.career-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.career-content h2 {
+    color: var(--primary);
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.career-positions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.career-position {
+    flex: 1;
+    background-color: var(--white);
+    border: 2px solid var(--cyan);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.career-position i {
+    font-size: 36px;
+    color: var(--primary);
+}
+
+.career-position h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.career-position p {
+    font-size: 16px;
+}
+
+.contact-us-section {
+    background-color: var(--light);
+    padding: 20px;
+    border: 2px solid var(--cyan);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.contact-us-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-us-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-us-content h2 {
+    color: var(--primary);
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contact-us-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.btn-contact-us {
+    display: inline-block;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+}
+
+.btn-contact-us i {
+    font-size: 20px;
+    margin-right: 10px;
+}

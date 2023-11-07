@@ -1,0 +1,362 @@
+:root {
+    --blue: #007bff;
+    --cyan: #17a2b8;
+    --primary: var(--blue);
+    --white: #fff;
+}
+
+body {
+    font-family: var(--font-family-sans-serif);
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+/* About Section */
+.about-section {
+    background-color: var(--light);
+    padding: 20px;
+    border: 2px solid var(--cyan);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.about-section h2 {
+    color: var(--primary);
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.btn-play-now {
+    display: inline-block;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 20px auto 0;
+    display: block;
+    text-align: center;
+    width: 120px;
+}
+
+.btn-play-now:hover {
+    background-color: var(--cyan);
+}
+
+/* Mission Section */
+.mission-section {
+    background-color: var(--light);
+    padding: 20px;
+    border: 2px solid var(--cyan);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.mission-section h2 {
+    color: var(--primary);
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.mission-section p {
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Image Section */
+.image-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.image-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.image-card {
+    display: inline-block;
+    width: 350px;
+    border: 2px solid var(--cyan);
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+}
+
+.image-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Games Section */
+.games-section {
+    background-color: var(--light);
+    padding: 20px;
+    border: 2px solid var(--cyan);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.games-section h2 {
+    color: var(--primary);
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.game-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.game {
+    display: inline-block;
+    width: 350px;
+    border: 2px solid var(--cyan);
+    border-radius: 10px;
+    margin: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+}
+
+.game-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border: 2px solid var(--cyan);
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.game-icon img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.game-details h3 {
+    color: var(--primary);
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.game-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-download {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.btn-download i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.game-icon i {
+    font-size: 48px;
+    color: var(--white);
+    margin-right: 20px;
+}
+
+/* African Culture Section */
+.african-culture-section {
+    background-image: url('/Images/mgolvzU7PO5fmte5.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    text-align: center;
+    color: var(--white);
+    position: relative;
+    padding: 40px;
+    border: 2px solid var(--cyan);
+    border-radius: 20px;
+    margin: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+}
+
+/* Africa Section */
+.africa-section {
+    background-color: var(--light);
+    padding: 20px;
+    border: 2px solid var(--cyan);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.africa-content {
+    display: flex;
+    align-items: center;
+}
+
+.africa-image {
+    width: 70%;
+}
+
+.africa-image img {
+    max-width: 70%;
+    height: auto;
+    border: 2px solid var(--cyan);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.africa-text {
+    width: 50%;
+}
+
+.africa-text h2 {
+    color: var(--primary);
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.africa-text p {
+    font-size: 20px;
+}
+
+/* Team Section */
+.team-section {
+    background-color: var(--light);
+    padding: 20px;
+    border: 2px solid var(--cyan);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.team-section h2 {
+    color: var(--primary);
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.team-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.team-box {
+    flex: 1;
+    background-color: var(--white);
+    border: 2px solid var(--cyan);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.team-box i {
+    font-size: 24px;
+    color: var(--primary);
+}
+
+.team-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.team-box p {
+    font-size: 16px;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: var(--light);
+    padding: 20px;
+    border: 2px solid var(--cyan);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.contact-section h2 {
+    color: var(--primary);
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.contact-icon {
+    flex: 1;
+    background-color: var(--white);
+    border: 2px solid var(--cyan);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-icon i {
+    font-size: 36px;
+    color: var(--primary);
+}
+
+.contact-icon p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.btn-contact-us {
+    display: inline-block;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+    width: 200px;
+}
+@media (max-width: 768px) {
+    
+}
